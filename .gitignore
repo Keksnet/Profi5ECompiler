@@ -44,3 +44,4 @@ bin/
 ### Tests ###
 *.jar
 *.5e
+*.hex

@@ -1,3 +1,3 @@
 
-rootProject.name = "ProfiE5Compiler"
+rootProject.name = "Profi5ECompiler"
 

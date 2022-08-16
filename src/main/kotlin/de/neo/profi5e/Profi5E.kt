@@ -5,6 +5,7 @@ import de.neo.profi5e.instructions.AsmInstruction
 import de.neo.profi5e.instructions.AsmVariation
 import de.neo.profi5e.instructions.InstructionRegister
 import org.json.JSONObject
+import java.lang.StringBuilder
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.nio.file.Path
@@ -33,35 +34,61 @@ fun loadInstructions() {
 }
 
 fun main(args: Array<String>) {
-    val sourcePath: String
-    val outputPath: String
+    var sourcePath = ""
+    var outputPath = ""
+    var shrink = false
+    var handled = false
     when (args.size) {
         1 -> {
             sourcePath = args[0]
             outputPath = sourcePath.substring(0, sourcePath.lastIndexOf('.')) + ".5e"
+            shrink = args.any { it == "-s" || it == "--shrink" }
+            handled = true
         }
 
         2 -> {
             sourcePath = args[0]
             outputPath = args[1]
+            shrink = args.any { it == "-s" || it == "--shrink" }
+            handled = true
         }
 
-        else -> {
-            println("Usage: java -jar Profi5ECompiler <source> [output]")
+        else -> {}
+    }
+    if (!handled && args.isNotEmpty()) {
+        sourcePath = args[0]
+        outputPath = args[1]
+        shrink = args.any { it == "-s" || it == "--shrink" }
+    } else if (!handled) {
+        if (System.getenv("DEV") == null) {
+            println("Usage: java -jar Profi5ECompiler <source> [output] [-s|--shrink]")
             return
         }
+        sourcePath = "test.asm"
+        outputPath = "test.5e"
+        shrink = false
     }
     loadInstructions()
     println()
     val instructions = Parser.parse(Path.of(sourcePath)).parseContent()
     println("Printing instructions... (${instructions.size} instructions)")
+    val hexContent = StringBuilder()
     instructions.forEach {
-        print("0x${it.opcode.toString(16)} ")
+        if (shrink && it.opcode == "00".toUByte(16)) return@forEach
+        hexContent.append("${it.memoryAddress.toString(16)} ${it.opcode.toString(16).padStart(2, '0')} ")
         it.operands.forEach { it0 ->
-            print("0x${it0.toString(16)} ")
+            hexContent.append("${it0.toString(16).padStart(2, '0')} ")
         }
-        println()
+        hexContent.deleteCharAt(hexContent.length - 1)
+        hexContent.append("\n")
     }
+    val hexString = hexContent.toString().dropLast(1)
+    println(hexString)
+
+    val hexPathString = outputPath.substring(0, outputPath.lastIndexOf('.')) + ".hex"
+    val hexPath = Path.of(hexPathString)
+    println("Writing hex file to $hexPathString")
+    Files.write(hexPath, hexString.toByteArray())
 
     println("Writing to $outputPath...")
     val binPath = Path.of(outputPath)

@@ -10,7 +10,7 @@ data class AsmInstruction(
                 return@filter it.args.size == args.size
             }
             .firstOrNull {
-                println("Checking ${it.args} against $args")
+                // println("Checking ${it.args} against $args")
                 for (i in it.args.indices) {
                     val arg = AsmArg.fromString(args[i])
                     val itArg = it.args[i]
