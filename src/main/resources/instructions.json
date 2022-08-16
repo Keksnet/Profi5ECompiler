@@ -1,0 +1,1134 @@
+{
+  "aci": [
+    {
+      "args": ["ko"],
+      "code": "ce"
+    }
+  ],
+  "adc": [
+    {
+      "args": ["a"],
+      "code": "8f"
+    },
+    {
+      "args": ["b"],
+      "code": "88"
+    },
+    {
+      "args": ["c"],
+      "code": "89"
+    },
+    {
+      "args": ["d"],
+      "code": "8a"
+    },
+    {
+      "args": ["e"],
+      "code": "8b"
+    },
+    {
+      "args": ["h"],
+      "code": "8c"
+    },
+    {
+      "args": ["l"],
+      "code": "8d"
+    },
+    {
+      "args": ["m"],
+      "code": "8e"
+    }
+  ],
+  "add": [
+    {
+      "args": ["a"],
+      "code": "87"
+    },
+    {
+      "args": ["b"],
+      "code": "80"
+    },
+    {
+      "args": ["c"],
+      "code": "81"
+    },
+    {
+      "args": ["d"],
+      "code": "82"
+    },
+    {
+      "args": ["e"],
+      "code": "83"
+    },
+    {
+      "args": ["h"],
+      "code": "84"
+    },
+    {
+      "args": ["l"],
+      "code": "85"
+    },
+    {
+      "args": ["m"],
+      "code": "86"
+    }
+  ],
+  "adi": [
+    {
+      "args": ["ko"],
+      "code": "c6"
+    }
+  ],
+  "ana": [
+    {
+      "args": ["a"],
+      "code": "a7"
+    },
+    {
+      "args": ["b"],
+      "code": "a0"
+    },
+    {
+      "args": ["c"],
+      "code": "a1"
+    },
+    {
+      "args": ["d"],
+      "code": "a2"
+    },
+    {
+      "args": ["e"],
+      "code": "a3"
+    },
+    {
+      "args": ["h"],
+      "code": "a4"
+    },
+    {
+      "args": ["l"],
+      "code": "a5"
+    },
+    {
+      "args": ["m"],
+      "code": "a6"
+    }
+  ],
+  "ani": [
+    {
+      "args": ["ko"],
+      "code": "e6"
+    }
+  ],
+  "call": [
+    {
+      "args": ["adr"],
+      "code": "cd"
+    }
+  ],
+  "cc": [
+    {
+      "args": ["adr"],
+      "code": "dc"
+    }
+  ],
+  "cm": [
+    {
+      "args": ["adr"],
+      "code": "fc"
+    }
+  ],
+  "cma": [
+    {
+      "args": [],
+      "code": "2f"
+    }
+  ],
+  "cmc": [
+    {
+      "args": [],
+      "code": "3f"
+    }
+  ],
+  "cmp": [
+    {
+      "args": ["a"],
+      "code": "bf"
+    },
+    {
+      "args": ["b"],
+      "code": "b8"
+    },
+    {
+      "args": ["c"],
+      "code": "b9"
+    },
+    {
+      "args": ["d"],
+      "code": "ba"
+    },
+    {
+      "args": ["e"],
+      "code": "bb"
+    },
+    {
+      "args": ["h"],
+      "code": "bc"
+    },
+    {
+      "args": ["l"],
+      "code": "bd"
+    },
+    {
+      "args": ["m"],
+      "code": "be"
+    }
+  ],
+  "cnc": [
+    {
+      "args": ["adr"],
+      "code": "d4"
+    }
+  ],
+  "cnz": [
+    {
+      "args": ["adr"],
+      "code": "c4"
+    }
+  ],
+  "cp": [
+    {
+      "args": ["adr"],
+      "code": "f4"
+    }
+  ],
+  "cpe": [
+    {
+      "args": ["adr"],
+      "code": "f4"
+    }
+  ],
+  "cpi": [
+    {
+      "args": ["ko"],
+      "code": "fe"
+    }
+  ],
+  "cpo": [
+    {
+      "args": ["adr"],
+      "code": "e4"
+    }
+  ],
+  "cz": [
+    {
+      "args": ["adr"],
+      "code": "cc"
+    }
+  ],
+  "daa": [
+    {
+      "args": [],
+      "code": "27"
+    }
+  ],
+  "dad": [
+    {
+      "args": ["b"],
+      "code": "09"
+    },
+    {
+      "args": ["d"],
+      "code": "19"
+    },
+    {
+      "args": ["h"],
+      "code": "29"
+    },
+    {
+      "args": ["sp"],
+      "code": "39"
+    }
+  ],
+  "dcr": [
+    {
+      "args": ["a"],
+      "code": "3d"
+    },
+    {
+      "args": ["b"],
+      "code": "05"
+    },
+    {
+      "args": ["c"],
+      "code": "0d"
+    },
+    {
+      "args": ["d"],
+      "code": "15"
+    },
+    {
+      "args": ["e"],
+      "code": "1d"
+    },
+    {
+      "args": ["h"],
+      "code": "25"
+    },
+    {
+      "args": ["l"],
+      "code": "2d"
+    },
+    {
+      "args": ["m"],
+      "code": "35"
+    }
+  ],
+  "dcx": [
+    {
+      "args": ["b"],
+      "code": "0b"
+    },
+    {
+      "args": ["d"],
+      "code": "1b"
+    },
+    {
+      "args": ["h"],
+      "code": "2b"
+    },
+    {
+      "args": ["sp"],
+      "code": "3b"
+    }
+  ],
+  "di": [
+    {
+      "args": [],
+      "code": "f3"
+    }
+  ],
+  "ei": [
+    {
+      "args": [],
+      "code": "fb"
+    }
+  ],
+  "hlt": [
+    {
+      "args": [],
+      "code": "76"
+    }
+  ],
+  "in": [
+    {
+      "args": ["a"],
+      "code": "db"
+    }
+  ],
+  "inr": [
+    {
+      "args": ["a"],
+      "code": "3c"
+    },
+    {
+      "args": ["b"],
+      "code": "04"
+    },
+    {
+      "args": ["c"],
+      "code": "0c"
+    },
+    {
+      "args": ["d"],
+      "code": "14"
+    },
+    {
+      "args": ["e"],
+      "code": "1c"
+    },
+    {
+      "args": ["h"],
+      "code": "24"
+    },
+    {
+      "args": ["l"],
+      "code": "2c"
+    },
+    {
+      "args": ["m"],
+      "code": "34"
+    }
+  ],
+  "inx": [
+    {
+      "args": ["b"],
+      "code": "03"
+    },
+    {
+      "args": ["d"],
+      "code": "13"
+    },
+    {
+      "args": ["h"],
+      "code": "23"
+    },
+    {
+      "args": ["sp"],
+      "code": "33"
+    }
+  ],
+  "jc": [
+    {
+      "args": ["adr"],
+      "code": "da"
+    }
+  ],
+  "jm": [
+    {
+      "args": ["adr"],
+      "code": "fa"
+    }
+  ],
+  "jmp": [
+    {
+      "args": ["adr"],
+      "code": "c3"
+    }
+  ],
+  "jnc": [
+    {
+      "args": ["adr"],
+      "code": "d2"
+    }
+  ],
+  "jnz": [
+    {
+      "args": ["adr"],
+      "code": "c2"
+    }
+  ],
+  "jp": [
+    {
+      "args": ["adr"],
+      "code": "f2"
+    }
+  ],
+  "jpe": [
+    {
+      "args": ["adr"],
+      "code": "ea"
+    }
+  ],
+  "jpo": [
+    {
+      "args": ["adr"],
+      "code": "e2"
+    }
+  ],
+  "jz": [
+    {
+      "args": ["adr"],
+      "code": "ca"
+    }
+  ],
+  "lda": [
+    {
+      "args": ["adr"],
+      "code": "3a"
+    }
+  ],
+  "ldax": [
+    {
+      "args": ["b"],
+      "code": "0a"
+    },
+    {
+      "args": ["d"],
+      "code": "1a"
+    }
+  ],
+  "lhld": [
+    {
+      "args": ["adr"],
+      "code": "2a"
+    }
+  ],
+  "lxi": [
+    {
+      "args": ["b"],
+      "code": "01"
+    },
+    {
+      "args": ["d"],
+      "code": "11"
+    },
+    {
+      "args": ["h"],
+      "code": "21"
+    },
+    {
+      "args": ["sp"],
+      "code": "31"
+    }
+  ],
+  "mov": [
+    {
+      "args": ["a", "a"],
+      "code": "7f"
+    },
+    {
+      "args": ["a", "b"],
+      "code": "78"
+    },
+    {
+      "args": ["a", "c"],
+      "code": "79"
+    },
+    {
+      "args": ["a", "d"],
+      "code": "7a"
+    },
+    {
+      "args": ["a", "e"],
+      "code": "7b"
+    },
+    {
+      "args": ["a", "h"],
+      "code": "7c"
+    },
+    {
+      "args": ["a", "l"],
+      "code": "7d"
+    },
+    {
+      "args": ["a", "m"],
+      "code": "7e"
+    },
+    {
+      "args": ["b", "a"],
+      "code": "47"
+    },
+    {
+      "args": ["b", "b"],
+      "code": "40"
+    },
+    {
+      "args": ["b", "c"],
+      "code": "41"
+    },
+    {
+      "args": ["b", "d"],
+      "code": "42"
+    },
+    {
+      "args": ["b", "e"],
+      "code": "43"
+    },
+    {
+      "args": ["b", "h"],
+      "code": "44"
+    },
+    {
+      "args": ["b", "l"],
+      "code": "45"
+    },
+    {
+      "args": ["b", "m"],
+      "code": "46"
+    },
+    {
+      "args": ["c", "a"],
+      "code": "4f"
+    },
+    {
+      "args": ["c", "b"],
+      "code": "48"
+    },
+    {
+      "args": ["c", "c"],
+      "code": "49"
+    },
+    {
+      "args": ["c", "d"],
+      "code": "4a"
+    },
+    {
+      "args": ["c", "e"],
+      "code": "4b"
+    },
+    {
+      "args": ["c", "h"],
+      "code": "4c"
+    },
+    {
+      "args": ["c", "l"],
+      "code": "4d"
+    },
+    {
+      "args": ["c", "m"],
+      "code": "4e"
+    },
+    {
+      "args": ["d", "a"],
+      "code": "57"
+    },
+    {
+      "args": ["d", "b"],
+      "code": "50"
+    },
+    {
+      "args": ["d", "c"],
+      "code": "51"
+    },
+    {
+      "args": ["d", "d"],
+      "code": "52"
+    },
+    {
+      "args": ["d", "e"],
+      "code": "53"
+    },
+    {
+      "args": ["d", "h"],
+      "code": "54"
+    },
+    {
+      "args": ["d", "l"],
+      "code": "55"
+    },
+    {
+      "args": ["d", "m"],
+      "code": "56"
+    },
+    {
+      "args": ["e", "a"],
+      "code": "5f"
+    },
+    {
+      "args": ["e", "b"],
+      "code": "58"
+    },
+    {
+      "args": ["e", "c"],
+      "code": "59"
+    },
+    {
+      "args": ["e", "d"],
+      "code": "ea"
+    },
+    {
+      "args": ["e", "e"],
+      "code": "5b"
+    },
+    {
+      "args": ["e", "h"],
+      "code": "5c"
+    },
+    {
+      "args": ["e", "l"],
+      "code": "5d"
+    },
+    {
+      "args": ["e", "m"],
+      "code": "5e"
+    },
+    {
+      "args": ["h", "a"],
+      "code": "67"
+    },
+    {
+      "args": ["h", "b"],
+      "code": "60"
+    },
+    {
+      "args": ["h", "c"],
+      "code": "61"
+    },
+    {
+      "args": ["h", "d"],
+      "code": "62"
+    },
+    {
+      "args": ["h", "e"],
+      "code": "63"
+    },
+    {
+      "args": ["h", "h"],
+      "code": "64"
+    },
+    {
+      "args": ["h", "l"],
+      "code": "65"
+    },
+    {
+      "args": ["h", "m"],
+      "code": "66"
+    },
+    {
+      "args": ["l", "a"],
+      "code": "6f"
+    },
+    {
+      "args": ["l", "b"],
+      "code": "68"
+    },
+    {
+      "args": ["l", "c"],
+      "code": "69"
+    },
+    {
+      "args": ["l", "d"],
+      "code": "6a"
+    },
+    {
+      "args": ["l", "e"],
+      "code": "6b"
+    },
+    {
+      "args": ["l", "h"],
+      "code": "6c"
+    },
+    {
+      "args": ["l", "l"],
+      "code": "6d"
+    },
+    {
+      "args": ["l", "m"],
+      "code": "6e"
+    },
+    {
+      "args": ["m", "a"],
+      "code": "77"
+    },
+    {
+      "args": ["m", "b"],
+      "code": "70"
+    },
+    {
+      "args": ["m", "c"],
+      "code": "71"
+    },
+    {
+      "args": ["m", "d"],
+      "code": "72"
+    },
+    {
+      "args": ["m", "e"],
+      "code": "73"
+    },
+    {
+      "args": ["m", "h"],
+      "code": "74"
+    },
+    {
+      "args": ["m", "l"],
+      "code": "75"
+    }
+  ],
+  "mvi": [
+    {
+      "args": ["a", "ko"],
+      "code": "3e"
+    },
+    {
+      "args": ["b", "ko"],
+      "code": "06"
+    },
+    {
+      "args": ["c", "ko"],
+      "code": "0e"
+    },
+    {
+      "args": ["d", "ko"],
+      "code": "16"
+    },
+    {
+      "args": ["e", "ko"],
+      "code": "1e"
+    },
+    {
+      "args": ["h", "ko"],
+      "code": "26"
+    },
+    {
+      "args": ["l", "ko"],
+      "code": "2e"
+    },
+    {
+      "args": ["m", "ko"],
+      "code": "36"
+    }
+  ],
+  "nop": [
+    {
+      "args": [],
+      "code": "00"
+    }
+  ],
+  "ora": [
+    {
+      "args": ["a"],
+      "code": "b7"
+    },
+    {
+      "args": ["b"],
+      "code": "b0"
+    },
+    {
+      "args": ["c"],
+      "code": "b1"
+    },
+    {
+      "args": ["d"],
+      "code": "b2"
+    },
+    {
+      "args": ["e"],
+      "code": "b3"
+    },
+    {
+      "args": ["h"],
+      "code": "b4"
+    },
+    {
+      "args": ["l"],
+      "code": "b5"
+    },
+    {
+      "args": ["m"],
+      "code": "b6"
+    }
+  ],
+  "ori": [
+    {
+      "args": ["ko"],
+      "code": "f6"
+    }
+  ],
+  "out": [
+    {
+      "args": ["ka"],
+      "code": "d3"
+    }
+  ],
+  "pchl": [
+    {
+      "args": [],
+      "code": "e9"
+    }
+  ],
+  "pop": [
+    {
+      "args": ["a", "f"],
+      "code": "f1"
+    },
+    {
+      "args": ["b"],
+      "code": "c1"
+    },
+    {
+      "args": ["d"],
+      "code": "d1"
+    },
+    {
+      "args": ["h"],
+      "code": "e1"
+    }
+  ],
+  "push": [
+    {
+      "args": ["a", "f"],
+      "code": "f5"
+    },
+    {
+      "args": ["b"],
+      "code": "c5"
+    },
+    {
+      "args": ["d"],
+      "code": "d5"
+    },
+    {
+      "args": ["h"],
+      "code": "e5"
+    }
+  ],
+  "ral": [
+    {
+      "args": [],
+      "code": "17"
+    }
+  ],
+  "rar": [
+    {
+      "args": [],
+      "code": "1f"
+    }
+  ],
+  "rc": [
+    {
+      "args": [],
+      "code": "d8"
+    }
+  ],
+  "ret": [
+    {
+      "args": [],
+      "code": "c9"
+    }
+  ],
+  "rlc": [
+    {
+      "args": [],
+      "code": "07"
+    }
+  ],
+  "rm": [
+    {
+      "args": [],
+      "code": "f8"
+    }
+  ],
+  "rnc": [
+    {
+      "args": [],
+      "code": "d0"
+    }
+  ],
+  "rnz": [
+    {
+      "args": [],
+      "code": "c0"
+    }
+  ],
+  "rp": [
+    {
+      "args": [],
+      "code": "f0"
+    }
+  ],
+  "rpe": [
+    {
+      "args": [],
+      "code": "e8"
+    }
+  ],
+  "rpo": [
+    {
+      "args": [],
+      "code": "e0"
+    }
+  ],
+  "rrc": [
+    {
+      "args": [],
+      "code": "0f"
+    }
+  ],
+  "rst": [
+    {
+      "args": ["0"],
+      "code": "c7"
+    },
+    {
+      "args": ["1"],
+      "code": "cf"
+    },
+    {
+      "args": ["2"],
+      "code": "d7"
+    },
+    {
+      "args": ["3"],
+      "code": "df"
+    },
+    {
+      "args": ["4"],
+      "code": "e7"
+    },
+    {
+      "args": ["5"],
+      "code": "ef"
+    },
+    {
+      "args": ["6"],
+      "code": "f7"
+    },
+    {
+      "args": ["7"],
+      "code": "ff"
+    }
+  ],
+  "rz": [
+    {
+      "args": [],
+      "code": "c8"
+    }
+  ],
+  "sbb": [
+    {
+      "args": ["a"],
+      "code": "97"
+    },
+    {
+      "args": ["b"],
+      "code": "98"
+    },
+    {
+      "args": ["c"],
+      "code": "99"
+    },
+    {
+      "args": ["d"],
+      "code": "9a"
+    },
+    {
+      "args": ["e"],
+      "code": "9b"
+    },
+    {
+      "args": ["h"],
+      "code": "9c"
+    },
+    {
+      "args": ["l"],
+      "code": "9d"
+    },
+    {
+      "args": ["m"],
+      "code": "9e"
+    }
+  ],
+  "sbi": [
+    {
+      "args": ["ko"],
+      "code": "de"
+    }
+  ],
+  "shld": [
+    {
+      "args": ["adr"],
+      "code": "22"
+    }
+  ],
+  "sphl": [
+    {
+      "args": [],
+      "code": "f9"
+    }
+  ],
+  "sta": [
+    {
+      "args": ["adr"],
+      "code": "32"
+    }
+  ],
+  "stax": [
+    {
+      "args": ["b"],
+      "code": "02"
+    },
+    {
+      "args": ["d"],
+      "code": "12"
+    }
+  ],
+  "stc": [
+    {
+      "args": [],
+      "code": "37"
+    }
+  ],
+  "sub": [
+    {
+      "args": ["a"],
+      "code": "97"
+    },
+    {
+      "args": ["b"],
+      "code": "90"
+    },
+    {
+      "args": ["c"],
+      "code": "91"
+    },
+    {
+      "args": ["d"],
+      "code": "92"
+    },
+    {
+      "args": ["e"],
+      "code": "93"
+    },
+    {
+      "args": ["h"],
+      "code": "94"
+    },
+    {
+      "args": ["l"],
+      "code": "95"
+    },
+    {
+      "args": ["m"],
+      "code": "96"
+    }
+  ],
+  "sui": [
+    {
+      "args": ["ko"],
+      "code": "d6"
+    }
+  ],
+  "xchg": [
+    {
+      "args": [],
+      "code": "eb"
+    }
+  ],
+  "xra": [
+    {
+      "args": ["a"],
+      "code": "af"
+    },
+    {
+      "args": ["b"],
+      "code": "a8"
+    },
+    {
+      "args": ["c"],
+      "code": "a9"
+    },
+    {
+      "args": ["d"],
+      "code": "aa"
+    },
+    {
+      "args": ["e"],
+      "code": "ab"
+    },
+    {
+      "args": ["h"],
+      "code": "ac"
+    },
+    {
+      "args": ["l"],
+      "code": "ad"
+    },
+    {
+      "args": ["m"],
+      "code": "ae"
+    }
+  ],
+  "xri": [
+    {
+      "args": ["ko"],
+      "code": "ee"
+    }
+  ],
+  "xthl": [
+    {
+      "args": [],
+      "code": "e3"
+    }
+  ]
+}
