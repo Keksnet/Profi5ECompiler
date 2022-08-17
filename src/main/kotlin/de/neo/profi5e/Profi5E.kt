@@ -67,7 +67,7 @@ fun run(args: Array<String>) {
     options.addOption("x", "saveHex", false, "Save hex and binary output (default: false)")
     options.addOption("ms", "mem-start", true, "Memory offset of the binary (default: 0x8000)")
     options.addOption("me", "mem-end", true, "Memory end of the binary (default: 0x87FF)")
-    options.addOption("ma", "mem-auto", false, "Automatically determine memory range (default: true)")
+    options.addOption("ma", "mem-auto", false, "Automatically determine memory range [WARNING: experimental] (default: false)")
     options.addOption("ps", "program-start", true, "Program start address (default: 0x8000)")
     options.addOption("v", "verbose", false, "Verbose output (default: false)")
     options.addOption("vv", "very-verbose", false, "Very verbose output (default: false)")
@@ -109,9 +109,21 @@ fun run(args: Array<String>) {
     logVeryVerbose("Allocated 0x${bin.size.prefixedHexString(4)} bytes for binary")
     logVeryVerbose("Memory range: 0x${memRange.first.prefixedHexString(4)} - 0x${memRange.second.prefixedHexString(4)}")
     var offset = Profi5E.cmd.getValue("ps", DEFAULT_PROGRAM_START) - memRange.first
+    var warnings = 0
     for (inst in instructions) {
         val bytes = inst.toBytes()
         for (byte in bytes) {
+            logVeryVerbose("0x${offset.prefixedHexString(4)}: 0x${byte.prefixedHexString(2)}")
+            if (offset >= bin.size) {
+                println("WARN: Instruction at 0x${offset.prefixedHexString(4)} outside memory range (overflow)")
+                warnings += 1
+                continue
+            }
+            if (offset < 0) {
+                println("WARN: Instruction at 0x${offset.prefixedHexString(4)} outside memory range (underflow)")
+                warnings += 1
+                continue
+            }
             bin[offset++] = byte.toByte()
         }
     }
@@ -133,7 +145,7 @@ fun run(args: Array<String>) {
 
     println("Writing to $outputPath...")
     Files.write(binPath, bin)
-    println("Compiled to $binPath")
+    println("Compiled to $binPath with $warnings warnings")
 }
 
 fun getMemoryRange(instructions: List<Instruction>): Pair<Int, Int> {

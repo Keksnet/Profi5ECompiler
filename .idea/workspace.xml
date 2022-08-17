@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/extensions/CommandLineExtensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/extensions/PrimitiveExtensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/util/PerformanceTimer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment="compiler optimizations and options">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Profi5E.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Profi5E.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/instructions/InstructionRegister.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/instructions/InstructionRegister.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.asm" beforeDir="false" afterPath="$PROJECT_DIR$/test.asm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +187,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660716738245</updated>
     </task>
+    <task id="LOCAL-00001" summary="compiler optimizations and options">
+      <created>1660731268279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660731268279</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,5 +207,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="compiler optimizations and options" />
+    <option name="LAST_COMMIT_MESSAGE" value="compiler optimizations and options" />
   </component>
 </project>
