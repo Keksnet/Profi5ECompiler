@@ -83,7 +83,10 @@ class Parser(private val content: String) {
                 if (Profi5E.cmd.hasOption("vv")) println("Found label $label at $address")
                 token1 = token1.replace("@$label", address)
             }
-            val args = token1.split(",")
+            val args = token1.split(",").toMutableList()
+            for (i in args.indices) {
+                args[i] = args[i].replace("0x", "")
+            }
             if (args.size == 1 && args[0].isBlank()) return@run listOf<String>()
             args
         }
