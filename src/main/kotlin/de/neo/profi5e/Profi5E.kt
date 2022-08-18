@@ -151,9 +151,13 @@ fun run(args: Array<String>) {
 fun getMemoryRange(instructions: List<Instruction>): Pair<Int, Int> {
     val auto = Profi5E.cmd.hasOption("ma")
     val ps = Profi5E.cmd.getValue("ps", DEFAULT_PROGRAM_START)
-    val ms = Profi5E.cmd.getValue("ms", if (auto) instructions.minOf(Instruction::memoryAddress) else DEFAULT_MEM_START)
-    val me = Profi5E.cmd.getValue("me", if (auto) instructions.maxOf(Instruction::memoryAddress) else DEFAULT_MEM_END)
+    val minAddress = instructions.minOf(Instruction::memoryAddress)
+    val maxAddress = instructions.maxOf { it.memoryAddress + it.byteSize } - 1 // -1 because maxOf returns the address of the following instruction
+    val ms = Profi5E.cmd.getValue("ms", if (auto) minAddress else DEFAULT_MEM_START)
+    val me = Profi5E.cmd.getValue("me", if (auto) maxAddress else DEFAULT_MEM_END)
     val programLen = me - ms
+    logVeryVerbose("Memory range (step 1): 0x${ms.prefixedHexString(4)} - 0x${me.prefixedHexString(4)}")
+    logVeryVerbose("Program length (step 1): 0x${programLen.prefixedHexString(4)}")
     return Pair(
         min(ms, ps),
         min(me, ps + programLen)

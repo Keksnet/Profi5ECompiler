@@ -98,7 +98,7 @@ class Parser(private val content: String) {
             val a = when (argType) {
                 AsmArg.ADR -> {
                     var localArg = arg.toInt(16).toString(16)
-                    while(localArg.length != 4) localArg = "0$localArg"
+                    while(localArg.length != 4) localArg = localArg.padStart(4, '0')
                     listOf(localArg.substring(2).toUByte(16), localArg.substring(0, 2).toUByte(16))
                 }
 
