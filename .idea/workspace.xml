@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment="added ignore for 0x hex prefix">
+    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment="updated instructions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/instructions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/instructions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.asm" beforeDir="false" afterPath="$PROJECT_DIR$/test.asm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Profi5ECompiler" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -72,7 +73,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/neo8/git/Profi5ECompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Profi5ECompiler [shadowJar]">
+  <component name="RunManager" selected="Gradle.Profi5ECompiler [runShadow]">
     <configuration name="Profi5ECompiler [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -96,10 +97,15 @@
     </configuration>
     <configuration name="Profi5ECompiler [runShadow]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DEV" value="1" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -170,8 +176,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Profi5ECompiler [shadowJar]" />
         <item itemvalue="Gradle.Profi5ECompiler [runShadow]" />
+        <item itemvalue="Gradle.Profi5ECompiler [shadowJar]" />
         <item itemvalue="Gradle.Profi5ECompiler [run]" />
         <item itemvalue="Gradle.Profi5ECompiler [publishToMavenLocal]" />
       </list>
@@ -235,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660814541194</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated instructions">
+      <created>1660831305764</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660831305764</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +269,7 @@
     <MESSAGE value="removed useless jump" />
     <MESSAGE value="." />
     <MESSAGE value="added ignore for 0x hex prefix" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ignore for 0x hex prefix" />
+    <MESSAGE value="updated instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated instructions" />
   </component>
 </project>

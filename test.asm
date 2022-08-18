@@ -8,7 +8,7 @@ mvi a,01 ; the the initial value
 @loop
 out 00   ; toggle the leds
 mov b,a
-mvi a,01  ; set 1/10 wait time
+*3e 01  ; set 1/10 wait time
 call @wait ; wait
 mov a,b
 mvi c,80 ; the value for comparing

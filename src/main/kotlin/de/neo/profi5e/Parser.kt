@@ -73,6 +73,20 @@ class Parser(private val content: String) {
             return null
         }
 
+        if (line.startsWith("*")) {
+            val hex = line
+                .drop(1)
+                .filter { !it.isWhitespace() }
+                .chunked(2)
+            val instruction = Instruction(hex[0].removePrefix("0x").toUByte(16),
+                hex.drop(1).map { it.removePrefix("0x").toUByte(16) }, currentAddress)
+            currentAddress += instruction.byteSize
+            if (Profi5E.cmd.hasOption("v"))
+                println("Added compiled inline instruction '${hex.joinToString(" ") { "0x$it" }}'" +
+                        " at 0x${currentAddress.prefixedHexString(4)}")
+            return instruction
+        }
+
         val tokens = line.split(" ")
         val args = run {
             var token1 = tokens.getOrElse(1) { "" }
