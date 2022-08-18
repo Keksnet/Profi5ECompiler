@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" afterDir="false" />
+    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment="added ignore for 0x hex prefix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/instructions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/instructions.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660814233828</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=".">
+      <created>1660814477085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660814477085</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added ignore for 0x hex prefix">
+      <created>1660814541194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660814541194</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +255,7 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="removed useless jump" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="added ignore for 0x hex prefix" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ignore for 0x hex prefix" />
   </component>
 </project>

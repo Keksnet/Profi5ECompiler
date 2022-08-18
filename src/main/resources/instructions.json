@@ -455,15 +455,15 @@
   ],
   "lxi": [
     {
-      "args": ["b"],
+      "args": ["b", "adr"],
       "code": "01"
     },
     {
-      "args": ["d"],
+      "args": ["d", "adr"],
       "code": "11"
     },
     {
-      "args": ["h"],
+      "args": ["h", "adr"],
       "code": "21"
     },
     {
