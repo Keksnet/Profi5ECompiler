@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment="small changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="768050aa-2731-4377-bf15-ed0cf19527a0" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Parser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Profi5E.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/de/neo/profi5e/Profi5E.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.asm" beforeDir="false" afterPath="$PROJECT_DIR$/test.asm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +199,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660756762866</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="small changes">
+      <created>1660814137480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660814137480</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed useless jump">
+      <created>1660814223977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660814223977</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <created>1660814233828</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660814233828</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +238,8 @@
     <MESSAGE value="compiler optimizations and options" />
     <MESSAGE value="updated example + more verbose output" />
     <MESSAGE value="small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+    <MESSAGE value="removed useless jump" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
